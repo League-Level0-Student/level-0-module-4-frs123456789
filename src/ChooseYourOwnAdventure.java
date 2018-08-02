@@ -23,6 +23,24 @@ public class ChooseYourOwnAdventure {
 		 trythelocalcuisine();
 		}
 	
+	 
+	 
+	 
+	 
+	 
+	 int task1 = JOptionPane.showOptionDialog(null, "Now you have done that. Is is the end of your trip?", "Question 1", 0, JOptionPane.INFORMATION_MESSAGE, null,
+				new String[] { "Yes", "No", "I AM VERY INDECISIVE, I AM FREAKING OUT! I GUESS!" }, null);
+	
+	
+	 if(task1 == 0) {
+			yes();
+		}
+	 else if(task1 == 1) {
+			no();
+		}
+	 else if(task1 == 2) {
+		 idk();
+		}
 	
 	
 	
@@ -75,6 +93,23 @@ public class ChooseYourOwnAdventure {
 	static void trythelocalcuisine(){
 
 		JOptionPane.showMessageDialog(null, "You try a hole in the wall looking mediteranian resturant and it is delicious.");
+			
+		}
+	
+	static void yes(){
+
+		JOptionPane.showMessageDialog(null, "You return home with many new memories.");
+			
+		}
+	static void no(){
+
+		JOptionPane.showMessageDialog(null, "You continue on your trip and learn alot about the culture of Spain.");
+			
+		}
+	
+	static void idk(){
+
+		JOptionPane.showMessageDialog(null, "You can't decide and just go home. Once you get home, you regret your decision.");
 			
 		}
 	
